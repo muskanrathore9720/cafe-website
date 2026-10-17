@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Table Reservation</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .contact {
+            background: linear-gradient(rgba(0, 0, 0, 0.8),
+                    rgba(0, 0, 0, 0.8)),
+                url("images/contact-bg.jpg");
+
+            background-size: cover;
+            background-position: center;
+            padding: 60px 0;
+        }
+
+        .left-side {
+            color: white;
+            padding: 30px 15px;
+        }
+
+        .small-title {
+            font-size: 15px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .left-side h1 {
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 1.4;
+            margin-bottom: 30px;
+        }
+
+        .description {
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 65px;
+        }
+
+        .info-box {
+            background: white;
+            color: #222;
+            text-align: center;
+            padding: 55px 10px 20px;
+            border-radius: 5px;
+            position: relative;
+            height: 100%;
+        }
+
+        .info-box .icon {
+            position: absolute;
+            top: -27px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #ff554b;
+            color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 23px;
+        }
+
+        .info-box h3 {
+            font-size: 21px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .info-box p {
+            margin-bottom: 5px;
+            font-size: 15px;
+        }
+
+        .form-box {
+            background: white;
+            padding: 42px 30px;
+            border-radius: 5px;
+            height: 100%;
+        }
+
+        .form-box h2 {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .form-box input,
+        .form-box textarea {
+            width: 100%;
+            padding: 14px 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .form-box input {
+            height: 47px;
+        }
+
+        .form-box textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .form-box input:focus,
+        .form-box textarea:focus {
+            border-color: #ff554b;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background: #ff554b;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background: #e8443b;
+        }
+
+        @media (max-width: 767px) {
+            .contact {
+                padding: 25px 0;
+            }
+
+            .left-side {
+                padding: 20px 10px;
+            }
+
+            .left-side h1 {
+                font-size: 25px;
+            }
+
+            .description {
+                margin-bottom: 50px;
+            }
+
+            .info-box {
+                margin-bottom: 35px;
+            }
+
+            .form-box {
+                padding: 30px 18px;
+            }
+
+            .form-box h2 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="contact">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Left Side -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="left-side">
+
+                        <div class="small-title">
+                            <span>────</span> &nbsp; CONTACT US
+                        </div>
+
+                        <h1>
+                            Here You Can Make A Reservation
+                            Or Just walkin to our cafe
+                        </h1>
+
+                        <p class="description">
+                            Donec pretium est orci, non vulputate arcu
+                            hendrerit a. Fusce a eleifend risus, namel
+                            sollicitudin urna diam, sed commodo purus
+                            porta ut.
+                        </p>
+
+                        <div class="row g-4">
+
+                            <div class="col-md-6 col-sm-6 col-12">
+                                <div class="info-box">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+
+                                    <h3>Phone Numbers</h3>
+                                    <p>080-090-0990</p>
+                                    <p>080-090-0880</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-12">
+                                <div class="info-box">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+
+                                    <h3>Emails</h3>
+                                    <p>hello@company.com</p>
+                                    <p>info@company.com</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side Form -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="form-box">
+
+                        <h2>Table Reservation</h2>
+
+                        <form action="#" method="post">
+                            <div class="row">
+
+                                <div class="col-md-6 col-12">
+                                    <input type="text"
+                                        placeholder="Your Name*"
+                                        name="name" required>
+                                </div>
+
+                                <div class="col-md-6 col-12">
+                                    <input type="email"
+                                        placeholder="Your Email Address"
+                                        name="email" required>
+                                </div>
+
+                                <div class="col-md-6 col-12">
+                                    <input type="tel"
+                                        placeholder="Phone Number*"
+                                        name="phone" required>
+                                </div>
+
+                                <div class="col-md-6 col-12">
+                                    <input type="number"
+                                        placeholder="Number Of Guests"
+                                        name="guests" min="1" required>
+                                </div>
+
+                                <div class="col-md-6 col-12">
+                                    <input type="date"
+                                        name="date" required>
+                                </div>
+
+                                <div class="col-md-6 col-12">
+                                    <input type="time"
+                                        name="time" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <textarea name="message"
+                                        placeholder="Message"></textarea>
+                                </div>
+
+                                <div class="col-12">
+                                    <button type="submit" class="submit-btn">
+                                        Make A Reservation
+                                    </button>
+                                </div>
+
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="bootstrap.bundle.js"></script>
+
+</body>
+</html>

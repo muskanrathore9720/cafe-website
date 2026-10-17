@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Chefs</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #222;
+        }
+
+        .chefs-section {
+            padding: 50px 0 25px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 70px;
+        }
+
+        .chef-card {
+            border: 1px solid #b5b5b5;
+            border-radius: 3px;
+            padding: 5px;
+            height: 100%;
+            text-align: center;
+            background-color: white;
+        }
+
+        .chef-card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .chef-info {
+            padding: 20px 5px 24px;
+        }
+
+        .chef-info h3 {
+            font-size: 21px;
+            font-weight: bold;
+            margin: 0 0 5px;
+        }
+
+        .chef-info p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        @media (max-width: 767px) {
+            .chefs-section {
+                padding: 30px 0;
+            }
+
+            .section-title {
+                font-size: 26px;
+                margin-bottom: 30px;
+            }
+
+            .chef-card img {
+                height: 280px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="chefs-section">
+        <div class="container-fluid px-4">
+
+            
+
+            <div class="row g-4">
+
+              
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="chef-card">
+                        <img src="images/chefs-01.jpg"
+                             alt="Randy Walker">
+
+                        <div class="chef-info">
+                            <h3>Randy Walker</h3>
+                            <p>Pastry Chef</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="chef-card">
+                        <img src="images/chefs-02.jpg"
+                             alt="David Martin">
+
+                        <div class="chef-info">
+                            <h3>David Martin</h3>
+                            <p>Cookie Chef</p>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="chef-card">
+                        <img src="images/chefs-03.jpg"
+                             alt="Peter Perkson">
+
+                        <div class="chef-info">
+                            <h3>Peter Perkson</h3>
+                            <p>Pancake Chef</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="bootstrap.bundle.js"></script>
+
+</body>
+</html>
